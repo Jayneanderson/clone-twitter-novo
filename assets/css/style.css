@@ -6,6 +6,8 @@
 
 :root {
     --paleBlue: #00AAEC;
+    --border-bottom: 1px solid rgba(47, 51, 54, 1);
+    --gray-name: rgba(110, 118, 125, 1);
 }
 
 body {
@@ -16,18 +18,33 @@ body {
 }
 
 .container {
-    height: 663px;
     display: flex;
 }
 
-.selected {
-    color: var(--paleBlue);
+.header {
+    height: 663px;
 }
 
 a {
     text-decoration: none;
 }
 
+.selected {
+    color: var(--paleBlue);
+}
+
+.padding-left-right {
+    padding: 0 15px;
+}
+
+.padding-top-bottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.border-bottom {
+    border-bottom: var(--border-bottom);
+}
 /* -----------Estilizando o HEADER-----------------*/
 
 .header {
@@ -126,6 +143,10 @@ a {
     margin: 10px 0;
 }
 
+.button:hover {
+    background-color: #1a91da;
+}
+
 .short-profile {
     width: 100%;
     display: flex;
@@ -147,6 +168,7 @@ a {
 .name-and-username {
     width: 100px;
     margin-left: 16px;
+    cursor: pointer;
 }
 
 .name {
@@ -157,7 +179,7 @@ a {
 }
 
 .username {
-    color: rgba(110, 118, 125, 1);
+    color: var(--gray-name);
     font-weight: 400;
 }
 
@@ -186,15 +208,22 @@ a {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 5px;
-    padding-left: 25px;
+    padding-left: 10px;
 }
 
 .profile-arrow {
-    margin-right: 35px;
+    margin-right: 25px;
 }
 
 .fa-arrow-left {
+    padding: 12px;
     color: var(--paleBlue);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa-arrow-left:hover {
+    background-color: rgba(29, 161, 242, 0.1);
 }
 
 .profile-banner {
@@ -203,8 +232,12 @@ a {
 }
 
 .profile-wrapper {
-    padding: 0 15px;
+    padding-bottom: 5px;
     margin-bottom: 10px;
+}
+
+.info-bar {
+    border-bottom: 1px solid rgba(47, 51, 54, 1);
 }
 
 .img-and-button {
@@ -254,7 +287,7 @@ a {
 }
 
 .joined {
-    color: rgba(110, 118, 125, 1);
+    color: var(--gray-name);
     font-weight: 400;
     font-size: 15px;
 }
@@ -263,12 +296,8 @@ a {
     font-size: 16px;
 }
 
-strong {
-
-}
-
 .following-followers {
-    color: rgba(110, 118, 125, 1);
+    color: var(--gray-name);
     font-weight: 400;
     font-size: 15px;
 }
@@ -276,7 +305,7 @@ strong {
 .underline {
     display: inline-block;
     margin-right: 20px;
-    
+    border-bottom: 1px solid transparent;   
 }
 
 .underline:hover {
@@ -315,13 +344,119 @@ strong {
     justify-content: center;
     padding: 0 30px;
     font-weight: bold;
-    color: rgb(110, 118, 125);
+    color: var(--gray-name);
 }
 
-.selected {
+.bar-element-link .selected {
     height: 100%;
     display: flex;
     align-items: center;
     border-bottom: 4px solid var(--paleBlue);
     border-radius: 2px;
+}
+
+.who-follow {
+    
+}
+
+.user-profile {
+    border-bottom: var(--border-bottom);
+    padding-bottom: 12px;
+    padding-top: 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.user-profile:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: .2s;
+}
+
+.follow-too {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.follow-too-img {/* svg, então utilize fill*/
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    margin-left: 33px;
+}
+
+.follow-too-img path {
+    fill: var(--gray-name);
+}
+
+.follow {
+    font-size: 13px;
+    color: var(--gray-name);
+    font-weight: 800;
+}
+
+.user-profile-img-link {
+    height: 48px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.user-profile-img {
+    width: 48px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-profile-wrapper {
+}
+
+.user-profile-wrapper .name {
+    font-size: 15px;
+}
+
+.user-profile-username-button {
+    width: 100%;
+    display: flex;
+}
+
+.user-profile-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.user-profile-info .name-and-username {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-profile-info .name {
+    border-bottom: 1px solid transparent;
+}
+
+.user-profile-info .name:hover {
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.user-profile-username-button .button {
+    width: 77px;
+    height: 35px;
+    margin: 0;
+    background-color: #000000;
+    color: var(--paleBlue);
+    border: 1px solid var(--paleBlue);
+    font-size: 15px;
+}
+
+.user-profile-username-button .button:hover {
+    cursor: pointer;
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.user-profile-text {
+    color: #D9D9D9;
+    font-size: 15px;
+    margin-top: 8px;
 }
