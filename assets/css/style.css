@@ -45,6 +45,12 @@ a {
 .border-bottom {
     border-bottom: var(--border-bottom);
 }
+
+.hover-element:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: .2s;
+    cursor: pointer;
+}
 /* -----------Estilizando o HEADER-----------------*/
 
 .header {
@@ -459,4 +465,72 @@ a {
     color: #D9D9D9;
     font-size: 15px;
     margin-top: 8px;
+}
+
+.topics-wrapper {
+    width: 196px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding-top: 7px;
+}
+
+.topic-button {
+    border: var(--border-bottom);
+    border-radius: 22px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.topic-button:hover {
+    transition: .2s;
+}
+
+.internal-button {
+    width: 195px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #D9D9D9;
+}
+
+.internal-button-name {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.fa-plus {
+    color: var(--paleBlue);
+}
+
+.internal-button-first {
+    width: 100%;
+}
+
+.internal-button-last-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 22px 22px 0;
+    padding-right: 15px;
+}
+
+.internal-button-last-wrapper:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    transition: .2s;
+}
+
+.internal-button-last {
+    padding-left: 15px;
+    border-left: var(--border-bottom);
+}
+
+.show-more {
+    border-top: 1px solid rgba(47, 51, 54, 1);
+}
+
+.more {
+    color: var(--paleBlue);
 }
