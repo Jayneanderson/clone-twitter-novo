@@ -263,7 +263,7 @@
                             <div class="user-profile padding-left-right">
                                 <a href="/index.html">
                                     <div class="follow-too">
-                                        <svg class="follow-too-img xmlns:xlink=" http://www.w3.org/1999/xlink"
+                                        <svg class="follow-too-img" xmlns:xlink="http://www.w3.org/1999/xlink"
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
                                             class="r-13gxpu9 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"
                                             width="26" height="26">
@@ -387,7 +387,7 @@
                             </div><!-- Fim user-profile -->
                         </div> <!-- Fim peris -->
 
-                        <div class="show-more padding-left-right padding-top-bottom hover-element border-bottom">
+                        <div class="show-more hover-element border-bottom">
                             <a href="">
                                 <span class="more">Mostrar mais</span>
                             </a>
@@ -395,11 +395,13 @@
 
                         <div class="padding-left-right padding-top-bottom border-bottom">
                             <span class="name">Tópicos para seguir</span>
-                            <span class="username">Tweets sobre os Tópicos que você segue aparecem na timeline da Página Inicial</span>
+                            <span class="username" id="topics-follow-text">Tweets sobre os Tópicos que você segue aparecem na timeline da Página
+                                Inicial</span>
                         </div>
 
                         <div class="topics-to-follow">
-                            <!-- <i class="fas fa-arrow-left"></i>
+                            <!-- 
+                            <i class="fas fa-arrow-left"></i>
                             <i class="fas fa-arrow-right"></i> -->
                             <div class="topics-wrapper">
                                 <div class="topic-button">
@@ -415,7 +417,7 @@
                                             <div class="internal-button-last">
                                                 <!-- o efeito da barra é um border left -->
                                                 <i class="fas fa-times"></i>
-                                                
+
                                             </div>
                                         </div>
 
@@ -435,7 +437,7 @@
                                             <div class="internal-button-last">
                                                 <!-- o efeito da barra é um border left -->
                                                 <i class="fas fa-times"></i>
-                                                
+
                                             </div>
                                         </div>
 
@@ -455,7 +457,7 @@
                                             <div class="internal-button-last">
                                                 <!-- o efeito da barra é um border left -->
                                                 <i class="fas fa-times"></i>
-                                                
+
                                             </div>
                                         </div>
 
@@ -475,7 +477,7 @@
                                             <div class="internal-button-last">
                                                 <!-- o efeito da barra é um border left -->
                                                 <i class="fas fa-times"></i>
-                                                
+
                                             </div>
                                         </div>
 
@@ -495,7 +497,7 @@
                                             <div class="internal-button-last">
                                                 <!-- o efeito da barra é um border left -->
                                                 <i class="fas fa-times"></i>
-                                                
+
                                             </div>
                                         </div>
 
@@ -517,7 +519,7 @@
                                             <div class="internal-button-last">
                                                 <!-- o efeito da barra é um border left -->
                                                 <i class="fas fa-times"></i>
-                                                
+
                                             </div>
                                         </div>
 
@@ -539,7 +541,7 @@
                                             <div class="internal-button-last">
                                                 <!-- o efeito da barra é um border left -->
                                                 <i class="fas fa-times"></i>
-                                                
+
                                             </div>
                                         </div>
 
@@ -550,7 +552,7 @@
 
                         </div><!-- fim tópicos para seguir-->
 
-                        <div class="show-more padding-left-right padding-top-bottom hover-element border-bottom">
+                        <div class=" show-more hover-element border-bottom border-top">
                             <a href="">
                                 <span class="more">Mostrar Tópicos</span>
                             </a>
@@ -560,9 +562,109 @@
 
                 </section><!-- Fim da div do meio -->
 
-                <aside>
+                <aside class="aside">
+                    <div class="aside-search">
+                        <label for="search" class="search-img-input">
+                            <div class="search-img">
+                                <svg width="24" height="24" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="search">
+                                        <path id="search" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M26.6338 24.9587L32.0833 30.25L30.25 32.0833L24.9331 26.6548C22.8771 28.3315 20.2573 29.3333 17.4167 29.3333C10.835 29.3333 5.5 23.9983 5.5 17.4167C5.5 10.835 10.835 5.5 17.4167 5.5C23.9983 5.5 29.3333 10.835 29.3333 17.4167C29.3333 20.2691 28.3232 22.8989 26.6338 24.9587ZM8 17.5C8 22.7567 12.2433 27 17.5 27C22.7567 27 27 22.7567 27 17.5C27 12.2433 22.7567 8 17.5 8C12.2433 8 8 12.2433 8 17.5Z"
+                                            fill="#6e767d" fill-opacity="0.54" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="search-input">
+                                <input type="text" id="search" placeholder="Buscar no Twitter">
+                            </div>
+                        </label>
+                    </div>
 
-                </aside><!-- Fim do asie final -->
+                    <section class="who-follow">
+                        <div class="padding-left-right padding-top-bottom">
+                            <span class="name" id="who-follow-title">Talvez você curta</span>
+                        </div>
+
+                        <div class="profiles">
+                            <!-- 1º perfil -->
+                            <div class="user-profile padding-left-right">
+                                <a href="/index.html">
+                                    <div class="user-profile-wrapper">
+                                        <div class="user-profile-username-button">
+                                            <a href="" class="user-profile-img-link">
+                                                <img src="assets/img/avatar.svg" alt="" class="user-profile-img">
+                                            </a>
+                                            <div class="user-profile-info">
+                                                <div class="name-and-username">
+                                                    <a href="">
+                                                        <span class="name">Passos One</span>
+                                                        <span class="username">@Passos1</span>
+                                                    </a>
+                                                    <div>
+                                                        <button class="button">Seguir</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div><!-- Fim user-profile -->
+                            <div class="user-profile padding-left-right">
+                                <a href="/index.html">
+                                    <div class="user-profile-wrapper">
+                                        <div class="user-profile-username-button">
+                                            <a href="" class="user-profile-img-link">
+                                                <img src="assets/img/avatar.svg" alt="" class="user-profile-img">
+                                            </a>
+                                            <div class="user-profile-info">
+                                                <div class="name-and-username">
+                                                    <a href="">
+                                                        <span class="name">Passos One</span>
+                                                        <span class="username">@Passos1</span>
+                                                    </a>
+                                                    <div>
+                                                        <button class="button">Seguir</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div><!-- Fim user-profile -->
+                            <div class="user-profile padding-left-right">
+                                <a href="/index.html">
+                                    <div class="user-profile-wrapper">
+                                        <div class="user-profile-username-button">
+                                            <a href="" class="user-profile-img-link">
+                                                <img src="assets/img/avatar.svg" alt="" class="user-profile-img">
+                                            </a>
+                                            <div class="user-profile-info">
+                                                <div class="name-and-username">
+                                                    <a href="">
+                                                        <span class="name">Passos One</span>
+                                                        <span class="username">@Passos1</span>
+                                                    </a>
+                                                    <div>
+                                                        <button class="button">Seguir</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div><!-- Fim user-profile -->
+                        </div>
+                        <div class="show-more hover-element border-top">
+                            <a href="">
+                                <span class="more">Mostrar mais</span>
+                            </a>
+                        </div><!-- fim mostrar mais -->
+                    </section>
+                </aside><!-- Fim do aside final -->
             </div>
         </main>
     </div>
