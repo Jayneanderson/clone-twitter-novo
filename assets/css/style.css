@@ -69,6 +69,19 @@ a {
 .no-border {
     border-bottom: none;
 }
+
+.size {
+    font-size: 13px;
+}
+
+.align-horizotal-center {
+    
+}
+
+.align-vertical-center {
+    align-items: center;
+}
+
 /* -----------Estilizando o HEADER-----------------*/
 
 .header {
@@ -198,7 +211,7 @@ a {
 .name {
     display: block;
     color: #D9D9D9;
-    line-height: 20px;
+    line-height: 20px;  
     font-weight: bold;
 }
 
@@ -756,5 +769,9 @@ Esses dois são tratados como imagens, então lembre-se de não deixar repetir.
 }
 
 .aside .name {
-    margin: 5px 0;;
+    margin: 1px 0;;
+}
+
+.fa-times {
+    color: var(--gray-name);
 }
