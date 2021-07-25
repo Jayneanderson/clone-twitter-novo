@@ -18,6 +18,10 @@ body {
     background-color: #000000;
 }
 
+.teste {
+    display: block;
+}
+
 .container {
     display: flex;
 }
@@ -74,12 +78,50 @@ a {
     font-size: 13px;
 }
 
+.size-15 {
+    font-size: 15px;
+}
+
 .align-horizotal-center {
     
 }
 
 .align-vertical-center {
     align-items: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.short-button {
+    width: 77px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 0;
+    background-color: transparent;
+    color: var(--paleBlue);
+    border: 1px solid var(--paleBlue);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    border: 1px solid blue;
+    justify-content: space-between;
+}
+
+.line-height {
+    line-height: 20px;
+}
+
+.height-15 {
+    height: 16px;
 }
 
 /* -----------Estilizando o HEADER-----------------*/
@@ -160,7 +202,7 @@ a {
 
 .header-wrapper {
     width: 250px;
-    height: 32%;
+    height: 27%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -206,12 +248,12 @@ a {
     width: 100px;
     margin-left: 16px;
     cursor: pointer;
+    
 }
 
 .name {
     display: block;
-    color: #D9D9D9;
-    line-height: 20px;  
+    color: #D9D9D9;  
     font-weight: bold;
 }
 
@@ -299,7 +341,7 @@ a {
     background-color: #000000;
     color: var(--paleBlue);
     border: 1px solid var(--paleBlue);
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 15px;
 }
 
@@ -471,11 +513,13 @@ a {
 }
 
 .user-profile-info .name {
+    height: 19px;
+    margin-bottom: 5px;
     border-bottom: 1px solid transparent;
 }
 
 .user-profile-info .name:hover {
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom-color: #D9D9D9;
 }
 
 .user-profile-username-button .button {
@@ -730,6 +774,7 @@ Esses dois são tratados como imagens, então lembre-se de não deixar repetir.
 }
 
 #who-follow-title {
+    height: auto;
     font-size: 20px;
     font-weight: 800;
 }
@@ -742,6 +787,16 @@ Esses dois são tratados como imagens, então lembre-se de não deixar repetir.
 .aside .name-and-username {
     margin-left: 10px;
     padding-right: 20px;
+}
+
+.aside .name {
+    height: 16px;
+    margin: 1px 0;
+    
+}
+
+.aside .name:hover {
+    border-bottom-color: #D9D9D9;
 }
 
 .aside .button {
@@ -768,10 +823,80 @@ Esses dois são tratados como imagens, então lembre-se de não deixar repetir.
     border-radius: 6px;
 }
 
-.aside .name {
-    margin: 1px 0;;
+.aside .happing .username {
+    font-size: 13px;
+}
+
+.aside .happing .name {
+    height: auto;
+    border-bottom: none;
+}
+
+.aside-link {
+    display: block;
+}
+
+.aside .topics-to-follow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: none; /* Esta propriedade e a de baixo é p/ tirar o o q já foi usado*/
+    position: static;
+}
+
+.aside .topics-to-follow .name {
+    height: 17px;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+}
+
+.aside .topics-to-follow .name:hover {
+    border-bottom-color: #d9d9d9;
+}
+
+.full-width {
+    
+    border: 1px solid GREEn;
 }
 
 .fa-times {
     color: var(--gray-name);
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+
+.fa-times:hover {
+}
+
+.footer {
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 16px;
+}
+
+.footer-element {
+    display: inline-flex;
+    padding-right: 10px;
+    font-size: 13px;
+    color: var(--gray-name);
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+}
+
+.circle {
+    fill: var(--gray-name);
+    padding: 0 2px;
+}
+
+.footer-element-name {
+    height: 13px;
+    border-bottom: 1px solid transparent;
+    line-height: 1;
+}
+
+.border:hover {
+    border-bottom-color: var(--gray-name);
 }
