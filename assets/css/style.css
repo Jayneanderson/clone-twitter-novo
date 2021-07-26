@@ -23,11 +23,21 @@ body {
 }
 
 .container {
+    width: 100%;
     display: flex;
 }
 
 .header {
-    height: 663px;
+    width: 23.19%;
+    /* height: 612px; */
+    height: 612px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-wrapper {
+    width: 275px;
 }
 
 a {
@@ -126,17 +136,9 @@ a {
 
 /* -----------Estilizando o HEADER-----------------*/
 
-.header {
-    width: 23.2%;
-    height: 663px;
-    /* border-right: 1px solid rgba(217, 217, 217, 0.2); */
-}
-
 .nav-bar {
-    width: 100%;
-    height: 100%;
-    padding: 5px 32px;
-    padding-left: 56px;
+    width: 275px;
+    padding: 5px 12px;
 }
 
 .icon-twitter {
@@ -159,35 +161,36 @@ a {
 }
 
 .list-element {
+    width: 100%;
+    display: inline-flex;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.list-element-link {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
+    text-decoration: none;
+    color: #D9D9D9;
+    text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    cursor: pointer;
     padding: 12px;
     padding-right: 24px;
 }
 
-.list-element:hover {
+.list-element:hover .list-element-link {
     background-color: rgba(29, 161, 242, 0.1);
     border-radius: 25px;
 }
 
-.list-element:hover .list-element-name{
+.list-element:hover .list-element-name {
     color: var(--paleBlue);
 }
 
 .list-element:hover .list-element-img path, .list-element:hover .list-element-img circle {
     fill: var(--paleBlue);
-}
-
-.list-element-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #D9D9D9;
-    text-decoration: none;
 }
 
 .list-element-name {
@@ -200,17 +203,21 @@ a {
     color: #D9D9D9;
 }
 
-.header-wrapper {
-    width: 250px;
-    height: 27%;
+.header-profile {
+    width: 95%;
+    height: 15%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding: 5px 12px;
+    position: relative;
+    z-index: 0;
 }
 
 
 .button {
-    width: 225px;
+    width: 250px;
     height: 48px;
     display: inline-flex;
     align-items: center;
@@ -271,13 +278,17 @@ a {
 
 /* -----------Estilizando o Perfil-----------------*/
 
+.main {
+}
+
 .profile-aside {
-    width: 600px;
+    width: 100%;
     height: 100%;
     display: flex;
 }
 
 .profile {
+    width: 600px;
     height: 100%;
     border-right: 1px solid rgba(217, 217, 217, 0.2);
     border-left: 1px solid rgba(217, 217, 217, 0.2);
@@ -709,11 +720,13 @@ Esses dois são tratados como imagens, então lembre-se de não deixar repetir.
 /* -----------Estilizando o Aside-----------------*/
 
 .aside {
-    padding: 0 20px;
+    width: 350px;
+    margin-right: 10px;
+    margin-left: 30px;
 }
 
 .aside-search {
-    width: 350px;
+    /* width: 350px; */
     height: 44px;
     background-color: rgb(32, 35, 39);
     border-radius: 25px;
@@ -750,7 +763,6 @@ Esses dois são tratados como imagens, então lembre-se de não deixar repetir.
 }
 
 #search {
-    width: 100%;
     padding: 12px;
     background-color: transparent;
     outline: none;
