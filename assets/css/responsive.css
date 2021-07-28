@@ -13,7 +13,7 @@
 @media only screen and (max-width: 1305px) {
 
     .header {
-        width: 15%;
+        /* width: 15%; */
     }
     
     .nav-bar {
@@ -67,7 +67,6 @@
     }
     
     .avatar-resp {
-        width: 90%;
         height: 60px;
         display: flex;
         align-items: center;
@@ -85,3 +84,75 @@
     .avatar {
     }
 }
+
+@media only screen and (max-width: 1114px) {
+    .aside {
+        width: 288px;
+    }
+}
+
+@media only screen and (max-width: 1053px) {
+    
+    .container {
+    }
+    .aside {
+        display: none;
+    }
+    
+    .main {
+        width: 90%;
+    }
+    
+    .header {
+        width: 20%;
+        flex-shrink: 1;
+    }
+    
+    .profile-aside {
+        width: 90%;
+        padding-right: 0;
+    }
+
+    .profile-banner {
+        height: 12%;
+    }
+
+    .profile-img {
+        width: 27%;
+        height: 30%;
+    }
+
+    .bar-element-link {
+
+        padding: 0 14px;
+    }
+
+}
+
+    
+    @media only screen and (max-width: 761px) {
+        
+        .header {
+        }
+        
+        .nav-bar {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        
+        .header-wrapper {
+            width: 70px;
+        }
+        .main {
+
+        }
+
+        .profile {
+            width: 95%;
+        }
+        .profile-aside {
+            width: 100%;
+        }
+     }
+
