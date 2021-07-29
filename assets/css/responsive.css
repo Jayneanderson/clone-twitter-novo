@@ -132,7 +132,11 @@
     
     @media only screen and (max-width: 761px) {
         
+        .container {
+        }
         .header {
+            width: 100%;
+            border: 1px solid red;
         }
         
         .nav-bar {
@@ -143,6 +147,11 @@
         
         .header-wrapper {
             width: 70px;
+            width: px;
+        }
+        
+        .list-element-link {
+            padding: 12px;
         }
         .main {
 
